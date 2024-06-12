@@ -26,6 +26,13 @@ view: tbl_new_employees {
     sql: ${TABLE}.employee_id ;;
   }
 
+  dimension: external_contact_id {
+    tags: ["hubspot contact_id"]
+    label: "Hubspot id(external)"
+    type: string
+    sql: ${TABLE}.employee_id ;;
+  }
+
   dimension: last_evaluation {
     type: number
     sql: ${TABLE}.last_evaluation ;;
