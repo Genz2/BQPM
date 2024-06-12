@@ -27,7 +27,7 @@ view: tbl_new_employees {
   }
 
   dimension: external_contact_id {
-    tags: ["hubspot contact_id"]
+    tags: ["hubspot_contact_id"]
     label: "Hubspot id(external)"
     type: string
     sql: ${TABLE}.employee_id ;;
